@@ -4,7 +4,8 @@ body {
 		'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-	background: rgb(75, 27, 98);
+	/* background: rgb(75, 27, 98); */
+	background: beige;
 }
 
 code {
@@ -18,7 +19,7 @@ nav {
 }
 
 h1 {
-	color: white;
+	color: black;
 }
 
 /* navbar comp */
