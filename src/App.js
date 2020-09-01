@@ -1,12 +1,11 @@
 import React from 'react'
-import logo from './logo.svg'
 import './App.css'
 import './index.css'
 import { Route } from 'react-router-dom'
 import { Home } from './components/Home'
 import { Profile } from './components/Profile'
-import { Login } from './components/Login'
-import { Signup } from './components/Signup'
+import Login from './components/Login'
+import Signup from './components/Signup'
 
 import Navbar from './components/Navbar'
 

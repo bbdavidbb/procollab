@@ -45,6 +45,10 @@ h1 {
 	flex-direction: row;
 }
 
+.tabBox {
+	/* border: 1px solid rgb(138, 143, 138); */
+}
+
 .tabBox-main {
 	margin-left: 8px;
 	z-index: 10;
@@ -73,3 +77,10 @@ h1 {
 .TabLabel {
 	margin-left: 5px;
 }
+
+/* blank space on top of each page */
+
+.blank {
+	margin-top: 110px;
+}
+/* home page styling */
