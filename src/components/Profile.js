@@ -1,6 +1,7 @@
 import React from 'react'
 import { Button, Card, CardColumns } from 'react-bootstrap'
 import Projects from './Projects'
+import People from './People'
 import './css/Profile.scss'
 
 export const Profile = (props) => {
@@ -19,6 +20,10 @@ export const Profile = (props) => {
 			</Card>
 			<div class='projects-list'>
 				<Projects />
+			</div>
+
+			<div class= 'people-list'>
+				<People />
 			</div>
 		   </div>
 		</div>

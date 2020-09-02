@@ -1,11 +1,14 @@
 import React from 'react'
 import {Card, Button} from 'react-bootstrap'
+import ViewModal from './modals/ViewModal';
+import JoinModal from './modals/JoinModal';
+import ProfileModal from './modals/ProfileModal';
 
 let dummyProjects = [ 
-    {title: "Project1", description: "a project the does something"},
-    {title: "Project2", description: "a project the does something better"},
-    {title: "Project3", description: "a project the does something worst"},
-    {title: "Project4", description: "a project the does something aassd"},
+    {title: "Project1", description: "a project the does something", participants: ["Gotrek", "Felix"]},
+    {title: "Project2", description: "a project the does something better", participants: ["Gotrek", "Felix", "Thanqol"]},
+    {title: "Project3", description: "a project the does something worst", participants: ["Gotrek", "Felix", "Kislev"]},
+    {title: "Project4", description: "a project the does something aassd", participants: ["Gotrek", "Felix", "Moulder"]},
   ];
 
 export default class Projects extends  React.Component {
@@ -22,8 +25,23 @@ export default class Projects extends  React.Component {
                         <Card.Text>
                             {p.description}
                          </Card.Text>
-                        <Button variant="primary">View</Button>
-                        <Button variant="primary">Join</Button>
+                         <Card.Footer>
+                        <ViewModal
+                         mainbut ="view" 
+                         fbut = "message"
+                         sbut = "apply"
+                         title = {p.title}
+                         description = {p.description}
+                         participants = {p.participants}
+                        />
+
+                        <JoinModal
+                        mainbut = "join"
+                        title = {p.title}
+                        description = {p.description}
+                        fbut = "send"
+                        />
+                        </Card.Footer>
                         </Card.Body>
                     </Card>
                 </div>
