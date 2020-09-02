@@ -1,6 +1,14 @@
-.profile-contents {
+.wrapper {
 	display: flex;
-	flex-direction: column;
-	align-items: center;
-	margin: 0 auto;
+	justify-content: center;
 }
+
+.grid {
+	display: grid;
+	max-width: 800px;
+	grid-template-columns: 1fr 2fr;
+}
+
+.projects-list {
+	grid-column-start: 2;
+  }

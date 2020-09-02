@@ -1,21 +1,26 @@
 import React from 'react'
-import { Button, Card } from 'react-bootstrap'
+import { Button, Card, CardColumns } from 'react-bootstrap'
+import Projects from './Projects'
 import './css/Profile.scss'
 
-export const Profile = () => {
+export const Profile = (props) => {
 	return (
 		<div class='profile-contents'>
-			<div class='blank'></div>
+			<div class='grid'> 
 			<Card style={{ width: '20rem' }}>
-				<Card.Img variant='profilepic' src='holder.js/100px180' />
+				<Card.Img variant='profilepic' src='https://i.picsum.photos/id/237/200/300.jpg?hmac=TmmQSbShHz9CdQm0NkEjx1Dyh_Y984R9LpNrpvH2D_U' />
 				<Card.Body>
 					<Card.Title>Student Name</Card.Title>
 					<Card.Text>School:</Card.Text>
 					<Card.Text>My Skills:</Card.Text>
-					<Card.Text>Current Project:</Card.Text>
+					<Card.Text>Current Projects:</Card.Text>
 					<Button variant='primary'>See your connections' profiles</Button>
 				</Card.Body>
 			</Card>
+			<div class='projects-list'>
+				<Projects />
+			</div>
+		   </div>
 		</div>
 	)
 }
