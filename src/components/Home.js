@@ -4,14 +4,15 @@ import { Container, Col, Row } from 'react-bootstrap'
 export const Home = () => {
 	return (
 		<div className='blank'>
-			<h1>Home page </h1>
-			<Container>
+			<h1> Connect with students in the US</h1>
+
+			{/* <Container>
 				<Row>
-					<Col>1 of 3</Col>
-					<Col>2 of 3</Col>
-					<Col>3 of 3</Col>
+					<Col>Profile</Col>
+					<Col>Project List</Col>
+					<Col>Users</Col>
 				</Row>
-			</Container>
+			</Container> */}
 		</div>
 	)
 }
