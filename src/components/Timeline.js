@@ -4,18 +4,21 @@ import './css/Projects.scss'
 
 let dummyProjects = [
 	{
-		title: 'Music Collab',
-		description: 'Need a guitarist and a singer for a short term project',
+		title: 'Project 1',
+		description: 'Website design',
+		date: 'a day ago',
 	},
 	{
-		title: 'Gaming Reviews',
-		description: 'Project details',
+		title: 'Project 2',
+		description: 'Need a singer for band',
+		date: '8/31/20',
 	},
 	{
-		title: 'Developers needed',
-		description: 'Large scale project',
+		title: 'Project 3',
+		description: 'Daily French practice',
+		date: '8/20/20',
 	},
-	{ title: 'Project 4', description: 'Project details' },
+	{ title: 'Project 4', description: 'Project details', date: '7/4/20' },
 ]
 
 export default class Projects extends React.Component {
@@ -31,6 +34,7 @@ export default class Projects extends React.Component {
 								<Card.Text>{p.description}</Card.Text>
 								<Button variant='primary'>View</Button>
 								<Button variant='primary'>Join</Button>
+								<Card.Text>Posted: {p.date}</Card.Text>
 							</Card.Body>
 						</Card>
 					</div>
