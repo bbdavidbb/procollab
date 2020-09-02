@@ -5,10 +5,14 @@
 
 .grid {
 	display: grid;
-	max-width: 800px;
+	max-width: 1000px;
 	grid-template-columns: 1fr 2fr;
 }
 
 .projects-list {
-	grid-column-start: 2;
+	grid-column-start: 3;
+}
+
+.people-list {
+	grid-column-start: 5;
 }
