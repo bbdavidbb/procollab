@@ -3,7 +3,6 @@ import { Card, Button } from 'react-bootstrap'
 import './css/Projects.scss'
 import ViewModal from './modals/ViewModal'
 import JoinModal from './modals/JoinModal'
-import ProfileModal from './modals/ProfileModal'
 
 let dummyProjects = [
 	{
@@ -35,7 +34,6 @@ export default class Projects extends React.Component {
 				{dummyProjects.map((p) => (
 					<div key={p}>
 						<Card>
-							<Card.Header>{p.title}</Card.Header>
 							<Card.Body>
 								<Card.Title>{p.title}</Card.Title>
 								<Card.Text>{p.description}</Card.Text>

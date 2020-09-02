@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { Button, Card, Modal } from 'react-bootstrap'
+import ProfileModal from './modals/ProfileModal'
 
 export default function Users() {
 	const [show, setShow] = useState(false)
@@ -8,31 +9,7 @@ export default function Users() {
 	const handleShow = (p) => {
 		setShow(true)
 	}
-	// let modelInfo = (p) => {
-	// 		return (
-	// 			<div>
-	// 				<Modal show={show} onHide={handleClose}>
-	// 					<Modal.Header closeButton>
-	// 						<Modal.Title>{p.name}</Modal.Title>
-	// 					</Modal.Header>
 
-	// 					<Modal.Body>
-	// 						<p>University: {p.university}</p>
-	// 						<p>Skills: {p.skills}</p>
-	// 					</Modal.Body>
-
-	// 					<Modal.Footer>
-	// 						<Button variant='secondary' onClick={handleClose}>
-	// 							Close
-	// 						</Button>
-	// 						<Button variant='primary' onClick={handleClose}>
-	// 							Message
-	// 						</	Button>
-	// 					</Modal.Footer>
-	// 				</Modal>
-	// 			</div>
-	// 		)
-	// 	}
 	let dummyUsers = [
 		{
 			name: 'Ruby Larson',
@@ -60,13 +37,22 @@ export default function Users() {
 								<Card.Subtitle className='mb-2 text-muted'>
 									{p.university}
 								</Card.Subtitle>
-								<Button onClick={() => handleShow(p)}>View Profile</Button>
-								<Button>Msg</Button>
 							</Card.Body>
+							<Card.Footer>
+								<ProfileModal
+									mainbut='view profile'
+									fbut='message'
+									sbut='add connection'
+									name={p.name}
+									school={p.university}
+									skills={p.skills}
+									projects={p.projects}
+								/>
+							</Card.Footer>
 						</Card>
 					</div>
 					<div>
-						<Modal show={show} onHide={handleClose}>
+						{/* <Modal show={show} onHide={handleClose}>
 							<Modal.Header closeButton>
 								<Modal.Title>{p.name}</Modal.Title>
 							</Modal.Header>
@@ -84,7 +70,7 @@ export default function Users() {
 									Message
 								</Button>
 							</Modal.Footer>
-						</Modal>
+						</Modal> */}
 					</div>
 				</div>
 			))}

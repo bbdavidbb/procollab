@@ -1,7 +1,7 @@
 import React from 'react'
 import { Modal, Button, Card } from 'react-bootstrap'
 
-export default class ProfileModal extends React.Component {
+export default class ConnectionModal extends React.Component {
 	state = {
 		show: false,
 	}
@@ -36,9 +36,6 @@ export default class ProfileModal extends React.Component {
 							variant='secondary'
 							onClick={() => this.setState({ show: false })}>
 							{this.props.fbut}
-						</Button>
-						<Button variant='primary' onClick={() => this.setState({ show: false })}>
-							{this.props.sbut}
 						</Button>
 					</Modal.Footer>
 				</Modal>
