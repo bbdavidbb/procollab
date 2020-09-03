@@ -1,5 +1,5 @@
 import React from 'react'
-import { Redirect } from 'react-router';
+import { Redirect } from 'react-router'
 import {
 	Button,
 	Card,
@@ -21,14 +21,14 @@ export default class LogIn extends React.Component {
 	// link up api calls
 	validateLogin = async (event) => {
 		event.preventDefault()
-		this.setState({redirect: true});
+		this.setState({ redirect: true })
 	}
 
 	render() {
 		if (this.state.redirect) {
-			return <Redirect push to="/Profile" />;
-		 }
-		 
+			return <Redirect push to='/Profile' />
+		}
+
 		return (
 			<div className='LogIn'>
 				<Card style={{ width: '30rem', height: '32rem' }} bg='dark' text='light'>

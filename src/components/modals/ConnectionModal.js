@@ -9,7 +9,9 @@ export default class ConnectionModal extends React.Component {
 	render() {
 		return (
 			<>
-				<Button variant='primary' onClick={() => this.setState({ show: true })}>
+				<Button
+					style={{ background: '#449955' }}
+					onClick={() => this.setState({ show: true })}>
 					{this.props.mainbut}
 				</Button>
 
@@ -19,10 +21,7 @@ export default class ConnectionModal extends React.Component {
 					</Modal.Header>
 					<Modal.Body>
 						<Card style={{ width: '20rem' }}>
-							<Card.Img
-								variant='profilepic'
-								src='https://picsum.photos/200'
-							/>
+							<Card.Img variant='profilepic' src='https://picsum.photos/200' />
 							<Card.Body>
 								<Card.Title>{this.props.name} </Card.Title>
 								<Card.Text>School: {this.props.school} </Card.Text>
@@ -33,7 +32,7 @@ export default class ConnectionModal extends React.Component {
 					</Modal.Body>
 					<Modal.Footer>
 						<Button
-							variant='secondary'
+							style={{ background: '#449955' }}
 							onClick={() => this.setState({ show: false })}>
 							{this.props.fbut}
 						</Button>

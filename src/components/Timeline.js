@@ -1,5 +1,5 @@
 import React from 'react'
-import { Card} from 'react-bootstrap'
+import { Card } from 'react-bootstrap'
 import './css/Timeline.scss'
 import ViewModal from './modals/ViewModal'
 import JoinModal from './modals/JoinModal'
@@ -12,7 +12,7 @@ let dummyProjects = [
 		date: 'a day ago',
 	},
 	{
-		title: "Polka tunk band",
+		title: 'Polka tunk band',
 		description: 'Need a singer for band',
 		participants: ['Alice', 'Patricia'],
 		date: '8/31/20',
@@ -52,7 +52,6 @@ export default class Projects extends React.Component {
 									description={p.description}
 									participants={p.participants}
 								/>
-							    &nbsp;
 								<JoinModal
 									mainbut='join'
 									title={p.title}

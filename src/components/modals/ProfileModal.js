@@ -9,7 +9,9 @@ export default class ProfileModal extends React.Component {
 	render() {
 		return (
 			<>
-				<Button variant='primary' onClick={() => this.setState({ show: true })}>
+				<Button
+					style={{ background: '#449955' }}
+					onClick={() => this.setState({ show: true })}>
 					{this.props.mainbut}
 				</Button>
 
@@ -33,7 +35,7 @@ export default class ProfileModal extends React.Component {
 					</Modal.Body>
 					<Modal.Footer>
 						<Button
-							variant='secondary'
+							style={{ background: '#449955' }}
 							onClick={() => this.setState({ show: false })}>
 							{this.props.fbut}
 						</Button>

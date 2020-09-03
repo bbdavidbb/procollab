@@ -1,5 +1,5 @@
 import React from 'react'
-import { Card} from 'react-bootstrap'
+import { Card } from 'react-bootstrap'
 import './css/Projects.scss'
 import ViewModal from './modals/ViewModal'
 import JoinModal from './modals/JoinModal'
@@ -38,7 +38,7 @@ export default class Projects extends React.Component {
 			<React.Fragment>
 				{dummyProjects.map((p) => (
 					<div key={p}>
-						<Card>
+						<Card style={{ margin: '0 0 20px 0' }}>
 							<Card.Body>
 								<Card.Title>{p.title}</Card.Title>
 								<Card.Text>{p.description}</Card.Text>
@@ -51,7 +51,6 @@ export default class Projects extends React.Component {
 										description={p.description}
 										participants={p.participants}
 									/>
-									&nbsp;
 									<JoinModal
 										mainbut='join'
 										title={p.title}

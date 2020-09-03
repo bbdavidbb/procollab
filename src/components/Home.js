@@ -8,17 +8,16 @@ export const Home = () => {
 	return (
 		<div className='blank'>
 			<h1> Connect with students in the US</h1>
-
-			<Container>
+			<Container class='container'>
 				<Row>
 					<Col>
-						Recently Posted Projects
+						<h3>Recently Posted Projects </h3>
 						<div class='projects-list'>
 							<Timeline />
 						</div>
 					</Col>
 					<Col xs={5}>
-						Potential Collaborators
+						<h3>Potential Collaborators</h3>
 						<Users />
 					</Col>
 				</Row>

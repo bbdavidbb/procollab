@@ -22,13 +22,14 @@ export const Profile = (props) => {
 						<Button variant='primary'>Post a project</Button>
 					</Card.Body>
 				</Card>
+
 				<div class='projects-list'>
-				<h2>Suggested Projects</h2>
+					<h2>Current Projects</h2>
 					<Projects />
 				</div>
-				
+
 				<div class='people-list'>
-				<h2>Suggested Connections</h2>
+					<h2>My Connections</h2>
 					<Connections />
 				</div>
 			</div>
