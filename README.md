@@ -1,6 +1,6 @@
 # ProCollab: A website for university students to work on projects together
 
-A hackathon project for [https://openwatervc.com/](Open Water Accelerator)
+A hackathon project for [Open Water Accelerator](https://openwatervc.com/) 
 
 ## Available Scripts/How to run 
 
