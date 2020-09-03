@@ -1,6 +1,6 @@
 # ProCollab: A website for university students to work on projects together
 
-A hackathon project for Open Water Accelerator.
+A hackathon project for [https://openwatervc.com/](Open Water Accelerator)
 
 ## Available Scripts/How to run 
 
@@ -12,7 +12,7 @@ After downloading node.js from [https://nodejs.org/en/](https://nodejs.org/en/)
 npm install --save
 ```
 
-- After the packages are done dowloading run
+- After the packages are done downloading run
 
 ```
 npm start 
