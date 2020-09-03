@@ -9,7 +9,9 @@ export default class BootModal extends React.Component {
 	render() {
 		return (
 			<>
-				<Button variant='primary' onClick={() => this.setState({ show: true })}>
+				<Button
+					style={{ background: '#449955' }}
+					onClick={() => this.setState({ show: true })}>
 					{this.props.mainbut}
 				</Button>
 
@@ -31,7 +33,9 @@ export default class BootModal extends React.Component {
 							onClick={() => this.setState({ show: false })}>
 							{this.props.fbut}
 						</Button>
-						<Button variant='primary' onClick={() => this.setState({ show: false })}>
+						<Button
+							style={{ background: '#449955' }}
+							onClick={() => this.setState({ show: false })}>
 							{this.props.sbut}
 						</Button>
 					</Modal.Footer>
