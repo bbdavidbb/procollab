@@ -1,0 +1,19 @@
+.wrapper {
+	display: flex;
+	justify-content: center;
+}
+
+.grid {
+	display: grid;
+	max-width: 1300px;
+	grid-template-columns: 1fr 2fr;
+	column-gap: 40px;
+}
+
+.projects-list {
+	grid-column-start: 3;
+}
+
+.people-list {
+	grid-column-start: 5;
+}
