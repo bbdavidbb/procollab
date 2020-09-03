@@ -1,26 +1,26 @@
 import React from 'react'
-import { Card, Button } from 'react-bootstrap'
+import { Card } from 'react-bootstrap'
 import './css/Timeline.scss'
 import ViewModal from './modals/ViewModal'
 import JoinModal from './modals/JoinModal'
 
 let dummyProjects = [
 	{
-		title: 'Project 1',
+		title: "Tim's hardware website",
 		description: 'Website design',
-		participants: ['Alex', 'Patricia'],
+		participants: ['George'],
 		date: 'a day ago',
 	},
 	{
-		title: 'Project 2',
+		title: 'Polka tunk band',
 		description: 'Need a singer for band',
 		participants: ['Alice', 'Patricia'],
 		date: '8/31/20',
 	},
 	{
-		title: 'Project 3',
+		title: 'Francois Quebecois',
 		description: 'Daily French practice',
-		participants: ['Nero', 'George'],
+		participants: ['Felix', 'Manette'],
 		date: '8/20/20',
 	},
 	{
@@ -52,7 +52,6 @@ export default class Projects extends React.Component {
 									description={p.description}
 									participants={p.participants}
 								/>
-
 								<JoinModal
 									mainbut='join'
 									title={p.title}

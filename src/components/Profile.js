@@ -1,5 +1,5 @@
 import React from 'react'
-import { Button, Card, CardColumns } from 'react-bootstrap'
+import { Button, Card } from 'react-bootstrap'
 import Projects from './Projects'
 import Connections from './Connections'
 import './css/Profile.scss'
@@ -14,18 +14,22 @@ export const Profile = (props) => {
 						src='https://i.picsum.photos/id/237/200/300.jpg?hmac=TmmQSbShHz9CdQm0NkEjx1Dyh_Y984R9LpNrpvH2D_U'
 					/>
 					<Card.Body>
-						<Card.Title>Student Name</Card.Title>
-						<Card.Text>School:</Card.Text>
-						<Card.Text>My Skills:</Card.Text>
-						<Card.Text>Current Projects:</Card.Text>
-						<Button variant='primary'>See your connections' profiles</Button>
+						<Card.Title>Michael</Card.Title>
+						<Card.Text>Seize the day</Card.Text>
+						<Card.Text>School: Harvard</Card.Text>
+						<Card.Text>My Skills: Java, Python</Card.Text>
+						<Card.Text>Current Projects: None</Card.Text>
+						<Button variant='primary'>Post a project</Button>
 					</Card.Body>
 				</Card>
+
 				<div class='projects-list'>
+					<h2>Current Projects</h2>
 					<Projects />
 				</div>
 
 				<div class='people-list'>
+					<h2>My Connections</h2>
 					<Connections />
 				</div>
 			</div>

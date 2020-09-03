@@ -1,5 +1,5 @@
 import React from 'react'
-import { Card, Button } from 'react-bootstrap'
+import { Card } from 'react-bootstrap'
 import './css/Projects.scss'
 import ViewModal from './modals/ViewModal'
 import JoinModal from './modals/JoinModal'
@@ -8,12 +8,12 @@ let dummyProjects = [
 	{
 		title: 'Music Collab',
 		description: 'Need a guitarist and a singer for a short term project',
-		participants: ['Gotrek', 'Felix'],
+		participants: ['Gork', 'Mork'],
 	},
 	{
 		title: 'Gaming Reviews',
-		description: 'Project details',
-		participants: ['Gotrek', 'Felix', 'Thanqol'],
+		description: 'Editing short articles',
+		participants: ['Mike Phe'],
 	},
 	{
 		title: 'Developers needed',
@@ -21,9 +21,14 @@ let dummyProjects = [
 		participants: ['Gotrek', 'Felix', 'Kislev'],
 	},
 	{
-		title: 'Project 4',
-		description: 'Project details',
-		participants: ['Gotrek', 'Felix', 'Moulder'],
+		title: 'Babysitter',
+		description: '2 year old',
+		participants: ['none'],
+	},
+	{
+		title: 'Pool Cleaner',
+		description: 'Minimum wage',
+		participants: ['Jack Pandya'],
 	},
 ]
 
@@ -33,7 +38,7 @@ export default class Projects extends React.Component {
 			<React.Fragment>
 				{dummyProjects.map((p) => (
 					<div key={p}>
-						<Card>
+						<Card style={{ margin: '0 0 20px 0' }}>
 							<Card.Body>
 								<Card.Title>{p.title}</Card.Title>
 								<Card.Text>{p.description}</Card.Text>
@@ -46,7 +51,6 @@ export default class Projects extends React.Component {
 										description={p.description}
 										participants={p.participants}
 									/>
-
 									<JoinModal
 										mainbut='join'
 										title={p.title}
